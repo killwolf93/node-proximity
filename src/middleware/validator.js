@@ -31,7 +31,7 @@ const Validator = {
     if (errors.length === 0) {
       next()
     } else {
-      res.send({success: false, errors})
+      res.status(400).send({success: false, errors})
     }
 
   }
