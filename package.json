@@ -1,0 +1,22 @@
+{
+  "name": "node-proximity",
+  "version": "1.0.0",
+  "description": "Code Challenge Andres Mata",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect=8181 ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres Mata",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parser": "^2.3.3",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.4",
+    "mongoose": "^5.9.25",
+    "sequelize": "^6.3.3"
+  },
+  "devDependencies": {
+    "mongodb-memory-server": "^6.6.1"
+  }
+}
