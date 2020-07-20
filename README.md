@@ -32,6 +32,12 @@ run
  npm run test
  ```       
 
+### Improving Space (TO DO)
+
+- Add a middleware to log incoming requests on the server.
+- Refactor validator middleware to use external library to perform validations (like joi)
+
+
 #### Assumptions
 
 There's no need to validate between the uploaded file and, the provider supplied to check if config map matches content on csv (If doesn't match the documents will be created with only the fields that matches the config).
