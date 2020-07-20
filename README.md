@@ -1,4 +1,4 @@
-#Proximity Code Challenge 
+# Proximity Code Challenge 
 
 ## Usage
 
@@ -38,4 +38,4 @@ There's no need to validate between the uploaded file and, the provider supplied
 
 The uploaded file needs to be stored in the server as backup.
 
-###Andrés Mata 
+### Andrés Mata 
