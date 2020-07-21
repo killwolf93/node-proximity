@@ -11,7 +11,9 @@ Inside `postman` folder is the postman collection to import in your postman.
 
 example file added in `examples/`
 
-One endpoint `upload` that will receive 2 parameters : `file` and `provider`
+One endpoint `/cars` that accepts two methods:
+POST: will receive 2 parameters : `file` and `provider`
+GET: doesn't receive anything and returns the stored car data.
 
 Current possible provider names: `['superCar','proxiCar']` any other provider column layout can be added in [config/providers.js](/config/providers.js)
 
