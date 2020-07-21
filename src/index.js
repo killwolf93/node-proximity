@@ -1,4 +1,6 @@
-const app = require('./app')
+const App = require('./app')
 
-app.listen(3000)
-console.log(`App listening on ${3000}`)
+App.getApp().then(app => {
+  app.listen(3000)
+  console.log(`App listening on ${3000}`)
+})

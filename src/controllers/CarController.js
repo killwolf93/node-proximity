@@ -1,9 +1,8 @@
 const Car = require('../db/models/Car')
 const FileParser = require('../utilities/FileParser')
-const connection = require('../db/connection');
 
 const CarController = {
-  upload: (req, res) => {
+  post: (req, res) => {
     const fileParams = {
       file: req.files.file,
       provider: req.body.provider,
@@ -22,7 +21,6 @@ const CarController = {
         })
   },
   insertAll: async (cars) => {
-    await connection.connect();
     return new Promise((resolve, reject) => {
       Car.insertMany(cars, (error, docs) => {
         if (error) {
@@ -31,6 +29,14 @@ const CarController = {
         resolve(docs)
       });
     })
+  },
+  get: async (req, res) => {
+    try {
+      const cars = await Car.find({});
+      res.send({success: true, data: cars})
+    } catch (e) {
+      res.status(500).send({success: false})
+    }
   }
 
 }
